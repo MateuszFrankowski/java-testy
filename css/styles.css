@@ -928,11 +928,21 @@ input {
   width: 1px;
 }
 #clock {
+  /* transform: translate(-50%, 60%); */
+  z-index: -1;
+  position: absolute;
+  right: 30px;
+  top: 110px;
   z-index: 100;
   width: auto;
-  height: 100px;
+  height: auto;
   margin: auto;
-  color: #000;
+  color: #fff;
+  font-family: Roboto;
   font-size: 16px;
+  transition: transform 0.2s; /* Animation */
+}
+#clock:hover {
+  transform: scale(1.2);
 }
 /* =========END form ========*/

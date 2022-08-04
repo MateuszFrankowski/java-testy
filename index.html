@@ -14,20 +14,7 @@
     <link rel="stylesheet" href="./css/styles.css?=1.0.3" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script type="text/javascript">
-      function refreshTime() {
-        var today = new Date();
-        var day = today.getDate();
-        var month = today.getMonth() + 1;
-        var year = today.getFullYear();
-        var hour = today.getHours();
-        var minute = today.getMinutes();
-        var second = today.getSeconds();
-        document.getElementById('clock').innerHTML =
-          day + '/' + month + '/' + year + ' | ' + hour + ':' + minute + ':' + second;
-        setTimeout('refreshTime', 1000);
-      }
-    </script>
+    <script type="text/javascript" src="js/timer.js"></script>
   </head>
   <body onload="refreshTime()">
     <div class="backdrop is-hidden" data-modal>
@@ -131,6 +118,7 @@
               >
             </li>
           </ul>
+          <div id="clock"></div>
         </div>
       </div>
       <section class="header">
@@ -199,7 +187,7 @@
       <section class="ourwork">
         <div class="container">
           <h2 class="ourwork-title">Czym się zajmujemy</h2>
-          <div id="clock"></div>
+
           <ul class="ourwork-photos">
             <li>
               <div class="text-with-background"><p>Aplikacje komputerowe</p></div>
@@ -548,7 +536,7 @@
         </div>
       </div>
     </footer>
-    <!-- <script type="text/javascript"></script> -->
+
     <script src="js/modal.js"></script>
   </body>
 </html>
